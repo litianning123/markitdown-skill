@@ -6,12 +6,12 @@ A [Claude Code](https://claude.com/claude-code) skill that converts various docu
 
 ## Features
 
-- 📄 **Document Conversion**: PDF, DOCX, PPTX, XLSX, XLS, CSV, JSON, XML
-- 🌐 **Web Content**: HTML pages, YouTube video metadata
-- 🖼️ **Image OCR**: Extract text from PNG, JPG images
-- 🎵 **Audio Transcription**: Transcribe WAV, MP3 audio files
-- 📦 **Batch Processing**: Convert multiple files at once
-- 📚 **Other Formats**: EPUB, ZIP files (iterates contents)
+-   📄 **Document Conversion**: PDF, DOCX, PPTX, XLSX, XLS, CSV, JSON, XML
+-   🌐 **Web Content**: HTML pages, YouTube video metadata
+-   🖼️ **Image OCR**: Extract text from PNG, JPG images
+-   🎵 **Audio Transcription**: Transcribe WAV, MP3 audio files
+-   📦 **Batch Processing**: Convert multiple files at once
+-   📚 **Other Formats**: EPUB, ZIP files (iterates contents)
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ python3 -m venv ~/.venv/markitdown
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/markitdown-skill.git
+git clone https://github.com/litianning123/markitdown-skill.git
 cd markitdown-skill
 ```
 
@@ -111,26 +111,26 @@ python convert.py "*.docx" --batch --json
 
 See the `examples/` directory for sample usage:
 
-- `examples/basic_usage.md` - Simple conversion examples
-- `examples/batch_processing.md` - Batch conversion workflows
-- `examples/advanced.md` - Advanced use cases
+-   `examples/basic_usage.md` - Simple conversion examples
+-   `examples/batch_processing.md` - Batch conversion workflows
+-   `examples/advanced.md` - Advanced use cases
 
 ## How It Works
 
 The skill leverages Microsoft's [MarkItDown](https://github.com/microsoft/markitdown) tool, which:
 
-- Parses document structure and preserves semantic elements
-- Extracts text content while maintaining headings, lists, tables
-- Uses OCR for images and speech recognition for audio
-- Optimizes output for LLM consumption
-- Fetches YouTube metadata and transcripts when available
+-   Parses document structure and preserves semantic elements
+-   Extracts text content while maintaining headings, lists, tables
+-   Uses OCR for images and speech recognition for audio
+-   Optimizes output for LLM consumption
+-   Fetches YouTube metadata and transcripts when available
 
 ## Limitations
 
-- Images use OCR/extraction (not full visual understanding)
-- Audio transcription quality depends on the speech recognition engine
-- YouTube URLs fetch metadata (not full video transcripts unless available)
-- For high-fidelity document conversions, consider specialized tools
+-   Images use OCR/extraction (not full visual understanding)
+-   Audio transcription quality depends on the speech recognition engine
+-   YouTube URLs fetch metadata (not full video transcripts unless available)
+-   For high-fidelity document conversions, consider specialized tools
 
 ## Contributing
 
@@ -142,12 +142,26 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- [Microsoft MarkItDown](https://github.com/microsoft/markitdown) - The underlying conversion tool
-- [Claude Code](https://claude.com/claude-code) - The AI development environment
+-   [Microsoft MarkItDown](https://github.com/microsoft/markitdown) - The underlying conversion tool
+-   [Claude Code](https://claude.com/claude-code) - The AI development environment
+
+## Installing from GitHub
+
+Once published, others can install your skill with:
+
+```bash
+# Clone directly to Claude skills directory
+git clone https://github.com/litianning123/markitdown-skill.git ~/.claude/skills/markitdown
+
+# Or download and extract
+wget https://github.com/litianning123/markitdown-skill/archive/refs/heads/main.zip
+unzip main.zip -d ~/.claude/skills/
+mv ~/.claude/skills/markitdown-skill ~/.claude/skills/markitdown
+```
 
 ## Support
 
-For issues, questions, or suggestions, please [open an issue](https://github.com/yourusername/markitdown-skill/issues).
+For issues, questions, or suggestions, please [open an issue](https://github.com/litianning123/markitdown-skill/issues).
 
 ---
 
